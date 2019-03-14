@@ -1,0 +1,6 @@
+framework module SicPaySDK {
+  umbrella header "SicPaySDK.h"
+
+  export *
+  module * { export * }
+}
