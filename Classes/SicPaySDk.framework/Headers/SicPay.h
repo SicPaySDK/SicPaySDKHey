@@ -40,7 +40,8 @@ typedef void (^SicPayCompletion)(NSDictionary *result, SicPayResultStatus paySta
 //INAPP不同渠道跳转支付配置的
 + (void)setUPOPScheme:(NSString *)scheme;
 + (void)setWeChatScheme:(NSString *)scheme;
-
++ (void)setTngWalletScheme:(NSString *)scheme;
++ (void)setCCFHCWaletScheme:(NSString *)scheme;
 //Apple Pay(如果不支持，不需要设置)
 + (void)setApplePayMerchantID:(NSString *)appleMerchantId;
 
@@ -103,7 +104,7 @@ typedef void (^SicPayCompletion)(NSDictionary *result, SicPayResultStatus paySta
 + (void)setDebugMode:(BOOL)enabled;
 
 /**
- *  设置 导航啦颜色 (支持UIColor和16进制颜色字符串)
+ *  设置 导航栏颜色 (支持UIColor和16进制颜色字符串)
  *  @param  navColor  SicPay 导航栏背景色
  *  @param  tintColor  SicPay 导航栏文字按钮色
  */
