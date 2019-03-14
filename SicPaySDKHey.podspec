@@ -18,7 +18,7 @@ Pod::Spec.new do |s|
 #特别重要，这里必须配置，否则上传成功，找不到.framework,只有头文件
   s.vendored_frameworks = 'Classes/SicPaySDk.framework'
 
-  s.dependency = 'OpenSSL'
+  s.dependency "OpenSSL"
 
   s.libraries = "z","c++"
 
